@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-mario {
+    height: 200px;
+}
+
+.imagem-mario-luigi {
+    height: 500px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+button {
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover {
+    color: hsl(206, 30%, 95%);
+    background: #ec1492;
+    transition: 0.5s ease-in-out;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+}
+
+.caixa-principal {
+    width: 50%;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.header img {
+    height: 60px;
+}
+
+.header a {
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: aqua;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: aqua;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+
+}
+
+form button {
+    margin-left: 14%;
+}
+
+.fale-home {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.titulo-home {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 35px;
+}
+
+.fale-conosco {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+}
+
+.fale-conosco {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    gap: 50px;
+    line-height: 35px;
+}
+
+.fale-conosco a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fale-conosco h1 {
+    margin: 20px;
+}
+
+.nosso-servicos {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.nosso-servicos {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 35px;
+}
+
+/* Media query
+
+    max=> Valor menor que Npx, aplica o css do Media.
+    min=> valor maior que Npx, aplica o css do Media.
+
+*/
+@media(max-width: 1100px) {
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imagem-mario-luigi {
+        width: 80vw;
+        height: auto;
+    }
+
+    .header {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header a {
+        font-size: 5vw;
+    }
+}
